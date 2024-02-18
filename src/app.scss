@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+.btn-icon {
+  border-radius: var(--theme-rounded-base);
+}
+
+.btn-with-icon {
+  display: grid;
+
+  justify-items: start;
+  grid-template-columns: 1rem 1fr;
+
+  gap: 0.5rem;
+}
+
+.swiper-pagination-bullet {
+  background: rgb(var(--color-primary-500));
+
+  &:is(.dark &) {
+    background: rgb(var(--color-primary-400));
+  }
+}
